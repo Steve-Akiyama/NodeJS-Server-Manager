@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<title>Program 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #1a1a2e; /* Dark muted purple */
+    color: #fff;
+  }
+  
+  h1 {
+    color: #bb86fc; /* Light purple */
+  }
+  
+  h3 {
+    color: #8a8a8a; /* Light gray */
+  }
+  
+  table {
+    width: 70%; /* Adjusted width */
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 0; /* No spacing between cells */
+  }
+  
+  th, td {
+    border: 1px solid #444;
+    padding: 6px; /* Reduced padding */
+    text-align: left;
+  }
+  
+  th {
+    background-color: #5e5e9e; /* Dark muted purple */
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #444; /* Darker muted purple */
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  select, input[type="text"] {
+    padding: 6px; /* Reduced padding */
+    margin-bottom: 10px;
+    background-color: #444; /* Darker muted purple */
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  input[type="button"] {
+    background-color: #5e5e9e; /* Dark muted purple */
+    color: #fff;
+    padding: 8px; /* Slightly larger padding for buttons */
+    cursor: pointer;
+    border: none;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #46468b; /* Slightly darker muted purple on hover */
+  }
+  
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+    <script src="/static/{{this}}"></script>
+    {{/each}}
+</head>
+<body>
+	{{{body}}}
+</body>
+</html>
